@@ -1,0 +1,153 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth; /* desplazamiento suave */
+}
+body {
+    font-family: Arial, sans-serif; /* poner fuente Arial */
+    font-size: 16px; /* tamaño de fuente 16px */
+    background: #1a1a2e; /* color de fondo */
+    color: white; /* color de texto */
+    display: flex; /* flexbox para centrar contenido */ 
+    flex-direction: column; /* dirección de la columna */
+    align-items: center; /* alinear elementos al centro */
+}
+nav {
+    background: #2a2a3b; /* color de fondo del menú */
+    padding: 20px; /* padding de 20px */
+    text-align: center; /* alinear texto al centro */
+    width: 60%; /* ancho del menú */
+    margin: 20px auto; /* margen automático para centrar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra del menú */
+    border-radius: 10px; /* bordes redondeados */
+}
+nav ul {
+    list-style: none; /* quitar viñetas de la lista */
+    display: flex; /* usar flexbox para alinear elementos */
+    justify-content: center; /* centrar elementos */
+    padding: 0; /* quitar padding */
+}
+nav ul li {
+    margin: 0 10px; /* margen de 10px a los lados */
+}
+nav ul li a {
+    background: #3a3a4f;  /* color de fondo del enlace */
+    color: white; /* color del texto */
+    text-decoration: none; /* quitar subrayado */
+    font-size: 18px; /* tamaño de fuente 18px */
+    padding: 10px 20px; /* padding de 10px arriba y abajo, 20px a los lados */
+    border-radius: 10px; /* bordes redondeados */
+    transition: background 0.3s; /* transición suave para el fondo */
+    display: inline-block; /* mostrar como bloque en línea */
+}
+nav ul li a:hover {
+    background: #1a1a2e; /* color de fondo al pasar el ratón */
+}
+section {
+    height: 100vh; /* altura de la sección 100vh */
+    display: flex; /* usar flexbox para alinear elementos */
+    flex-direction: column; /* dirección de la columna */
+    justify-content: center; /* centrar elementos verticalmente */
+    align-items: center; /* centrar elementos horizontalmente */
+    text-align: center; /* alinear texto al centro */
+    padding: 40px; /* padding de 40px */
+    background: #0f0f1a; /* color de fondo */
+    border-radius: 20px; /* bordes redondeados */
+    margin: 20px; /* margen de 20px */
+    width: 80%; /* ancho de la sección */
+}
+.content {
+    max-width: 800px; /* ancho máximo de 800px */
+    height: 100%; /* altura 100% */
+}
+.content h1 {
+    font-size: 36px; /* tamaño de fuente 36px */
+    margin-bottom: 20px; /* margen inferior de 20px */
+}
+.content p {
+    margin: 50px 0; /* margen de 50px arriba y abajo */
+    font-size: 18px; /* tamaño de fuente 18px */
+    margin-bottom: 20px; /* margen inferior de 20px */
+}
+.content ul {
+    font-size: 18px; /* tamaño de fuente 18px */
+    padding: 0; /* quitar padding */
+    margin: 60px 0; /* margen de 60px arriba y abajo */
+}
+.content img {
+    max-width: 80px; /* ancho máximo de 80px */
+    margin-top: 20px; /* margen superior de 20px */
+}
+.content img:hover{
+    transform: scale(1.4); /* aumentar tamaño al pasar el ratón */
+    transition: transform 0.3s; /* transición suave para el tamaño */
+}
+.table-section h1 {
+    font-size: 36px; /* tamaño de fuente 36px */
+    margin-bottom: 20px; /* margen inferior de 20px */
+}
+table {
+    width: 100%; /* ancho de la tabla 100% */
+    border-collapse: collapse; /* colapsar bordes */
+    background-color: #444; /* color de fondo */
+    color: white; /* color del texto */
+}
+th, td {
+    border: 1px solid #666;     /* borde de 1px */
+    padding: 10px; /* padding de 10px */
+    text-align: left; /* alinear texto a la izquierda */
+}
+th {
+    background-color: #333; /* color de fondo del encabezado */
+}
+footer{
+    display: flex; /* usar flexbox para alinear elementos */
+    justify-content: center; /* centrar elementos */
+    align-items: center; /* centrar elementos */
+    background: #0f0f1a; /* color de fondo */
+    height: 50px; /* altura de 50px */
+    width: 80%; /* ancho de 80% */
+    border-radius: 20px; /* bordes redondeados */
+}
+@media (max-width: 768px) { 
+    nav { 
+        width: 80%; 
+    }
+    section {
+        width: 90%;
+    }
+    .content img {
+        max-width: 60px;
+    }
+    table {
+        width: 80%;
+        height: 50%;
+    }
+    
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        width: 90%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .content ul{
+        font-size: 14px;
+    }
+    
+}
